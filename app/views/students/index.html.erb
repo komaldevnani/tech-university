@@ -13,7 +13,7 @@
           <p><%= student.email%> </p>
         </div>
         <div class="card-action">
-          <a href="#">View profile</a>
+          <%=link_to "View profile", student_path(student) %>
         </div>
       </div>
     </div>

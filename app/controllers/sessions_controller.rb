@@ -1,13 +1,11 @@
 class SessionsController < ApplicationController
   def new
-    if logged_in?
-      redirect_to root_path
-    end
+    redirect_to root_path if logged_in?
   end
 
   def create
-    student = Student.find_by(email: params[:session][:email])
-    if student && student.authenticate(params[:session][:password])
+    student = Student.find_by(email: params[:sessions][:email].downcase)
+    if student && student.authenticate(params[:sessions][:password])
       session[:student_id] = student.id
       flash[:success] = "You have successfully logged in"
       redirect_to student

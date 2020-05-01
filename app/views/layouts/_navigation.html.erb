@@ -1,7 +1,8 @@
 <header>
 <ul id="dropdown1" class="dropdown-content">
   <%if logged_in? %>
-    <li><%=link_to "logout", logout_path, method: :delete%></li>
+    <li><%= link_to "Your profile", student_path(current_user) %></li>
+    <li><%= link_to "Logout", logout_path, method: :delete%></li>
   <%else %>
     <li><%= link_to "Signup", new_student_path %></li>
     <li><%= link_to "Login", login_path %></li>
@@ -9,6 +10,7 @@
 </ul>
   <ul id="dropdown2" class="dropdown-content">
     <%if logged_in? %>
+      <li><%= link_to "Your profile", student_path(current_user) %></li>
       <li><%=link_to "logout", logout_path %></li>
     <%else %>
       <li><%= link_to "Signup", new_student_path %></li>
@@ -18,19 +20,21 @@
 <nav>
   <div class="container">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">Tech University</a>
+      <%= link_to "Tech university", root_path, class:"brand-logo right" %>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Courses</a></li>
-        <li><a href="badges.html">Enrollment</a></li>
+        <li><%= link_to "Courses", root_path %></li>
+        <%if logged_in? %>
+          <li><%= link_to "Enrollments", students_path %></li>
+        <%end %>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Accounts <i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </div>
 </nav>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Courses</a></li>
-    <li><a href="badges.html">Enrollment</a></li>
+    <li><%= link_to "Courses", root_path %></li>
+    <li><%= link_to "Enrollments", students_path %></li>
     <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"> Accounts <i class="material-icons right">arrow_drop_down</i></a></li>
   </ul>
   <%= render 'layouts/messages' %>
