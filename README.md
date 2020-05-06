@@ -1,24 +1,28 @@
-# README
+# University application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website of tech university where students can login and enroll to the courses.
+Materialize framework is used for front-end.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+* Run command ````bundle install --without production```` for all gem dependencies
 
-* System dependencies
+* For databases run
 
-* Configuration
+  ````rails db:create db:migrate````
 
-* Database creation
+* Now run ````rails s```` and navigate to ``localhost:3000`` in your browser.
 
-* Database initialization
+# Features
 
-* How to run the test suite
+* Home page
 
-* Services (job queues, cache servers, search engines, etc.)
+![homepage](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-25-33.png?raw=true)
 
-* Deployment instructions
+* Login page
 
-* ...
+![login](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-22-27.png?raw=true) 
+
+* Student page
+
+![student](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-23-10.png?raw=true)
