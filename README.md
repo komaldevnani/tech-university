@@ -17,12 +17,12 @@ Materialize framework is used for front-end.
 
 * Home page
 
-![homepage](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-25-33.png?raw=true)
+![homepage](https://github.com/komaldevnani/tech-university/blob/master/screenshots/Screenshot%20from%202020-05-06%2018-25-33.png?raw=true)
 
 * Login page
 
-![login](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-22-27.png?raw=true) 
+![login](https://github.com/komaldevnani/tech-university/blob/master/screenshots/Screenshot%20from%202020-05-06%2018-22-27.png?raw=true) 
 
 * Student page
 
-![student](https://github.com/komaldevnani/tech-universityblob/master/screenshots/Screenshot%20from%202020-05-06%2018-23-10.png?raw=true)
+![student](https://github.com/komaldevnani/tech-university/blob/master/screenshots/Screenshot%20from%202020-05-06%2018-23-10.png?raw=true)
